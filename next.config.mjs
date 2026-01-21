@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "zmobglhjayylkvifiupi.supabase.co",
+        pathname: "/storage/v1/object/public/**",
+      },
+    ],
+  },
+  // output: "export",
 };
 
 export default nextConfig;
